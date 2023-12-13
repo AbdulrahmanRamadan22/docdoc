@@ -1,3 +1,6 @@
+import 'package:docdoc/core/helpers/extensions.dart';
+import 'package:docdoc/core/routing/routers_string.dart';
+
 import '../../../core/theming/colors.dart';
 import '../../../core/theming/styles.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +13,7 @@ class GetStartedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () {
-        // context.pushNamed(Routes.loginScreen);
+        context.pushNamed(Routes.loginScreen);
       },
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(ColorsManager.mainBlue),
