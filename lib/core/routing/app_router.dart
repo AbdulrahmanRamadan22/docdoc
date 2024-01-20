@@ -1,6 +1,6 @@
 import 'package:docdoc/core/di/dependency_injection.dart';
 import 'package:docdoc/features/home/ui/home_screen.dart';
-import 'package:docdoc/features/login/logic/cuibt/login_cubit.dart';
+import 'package:docdoc/features/login/logic/cubit/login_cubit.dart';
 import 'package:docdoc/features/login/ui/login_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
