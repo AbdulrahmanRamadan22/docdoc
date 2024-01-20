@@ -1,8 +1,9 @@
 import 'package:docdoc/core/helpers/app_regex.dart';
 import 'package:docdoc/core/helpers/spacing.dart';
-import 'package:docdoc/features/login/logic/cuibt/login_cubit.dart';
+import 'package:docdoc/features/login/logic/cubit/login_cubit.dart';
 import 'package:docdoc/features/login/ui/widgets/password_validations.dart';
 import 'package:flutter/material.dart';
+// ignore: depend_on_referenced_packages
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/widgets/app_text_form_field.dart';

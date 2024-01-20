@@ -1,7 +1,8 @@
+// ignore: depend_on_referenced_packages
 import 'package:bloc/bloc.dart';
 import 'package:docdoc/features/login/data/models/login_request_body.dart';
 import 'package:docdoc/features/login/data/repos/login_repo.dart';
-import 'package:docdoc/features/login/logic/cuibt/login_state.dart';
+import 'package:docdoc/features/login/logic/cubit/login_state.dart';
 import 'package:flutter/material.dart';
 
 class LoginCubit extends Cubit<LoginState> {

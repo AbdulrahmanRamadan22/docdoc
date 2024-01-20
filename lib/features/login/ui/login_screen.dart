@@ -2,7 +2,7 @@ import 'package:docdoc/core/helpers/spacing.dart';
 import 'package:docdoc/core/theming/styles.dart';
 import 'package:docdoc/core/widgets/app_text_button.dart';
 import 'package:docdoc/features/login/data/models/login_request_body.dart';
-import 'package:docdoc/features/login/logic/cuibt/login_cubit.dart';
+import 'package:docdoc/features/login/logic/cubit/login_cubit.dart';
 import 'package:docdoc/features/login/ui/widgets/dont_have_account_text.dart';
 import 'package:docdoc/features/login/ui/widgets/email_and_password.dart';
 import 'package:docdoc/features/login/ui/widgets/login_bloc_listener.dart';
@@ -10,6 +10,7 @@ import 'package:docdoc/features/login/ui/widgets/terms_and_conditions_text.dart'
 
 import 'package:flutter/material.dart';
 
+// ignore: depend_on_referenced_packages
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 // ignore: depend_on_referenced_packages
