@@ -16,7 +16,7 @@ class DontHaveAccountText extends StatelessWidget {
             style: TextStyles.font13DarkBlueRegular,
           ),
           TextSpan(
-            text: 'Sign Up',
+            text: ' Sign Up',
             style: TextStyles.font13BlueSemiBold,
           ),
         ],
