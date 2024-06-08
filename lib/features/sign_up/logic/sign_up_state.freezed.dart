@@ -113,7 +113,7 @@ class _$InitialImpl<T> implements _Initial<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType && other is _$InitialImpl<T>);
   }
@@ -227,7 +227,7 @@ class _$SignUpLoadingImpl<T> implements SignUpLoading<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType && other is _$SignUpLoadingImpl<T>);
   }
@@ -359,7 +359,7 @@ class _$SignUpSuccessImpl<T> implements SignUpSuccess<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SignUpSuccessImpl<T> &&
@@ -506,7 +506,7 @@ class _$SignUpErrorImpl<T> implements SignUpError<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SignUpErrorImpl<T> &&
