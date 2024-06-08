@@ -1,4 +1,6 @@
+import 'package:docdoc/features/home/ui/widgets/home_top_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,7 +8,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("HomeScreen")),
+      body: SafeArea(
+          child: Container(
+        margin: EdgeInsets.fromLTRB(20.w, 16.h, 20.w, 28.h),
+        width: double.infinity,
+        child: Column(
+          children: const [
+            HomeTopBar(),
+          ],
+        ),
+      )),
     );
   }
 }

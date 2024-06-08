@@ -1,5 +1,4 @@
 import 'package:docdoc/core/networking/api_error_handler.dart';
-import 'package:docdoc/core/networking/api_error_model.dart';
 import 'package:docdoc/core/networking/api_result.dart';
 import 'package:docdoc/core/networking/api_service.dart';
 import 'package:docdoc/features/login/data/models/login_request_body.dart';
