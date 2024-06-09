@@ -14,7 +14,7 @@ platform :android do
 
     release = firebase_app_distribution(
       app: "1:106462945414:android:71182789a97e4c7188b107",
-      firebase_cli_token: "1//03DAEzRbWLzYWCgYIARAAGAMSNwF-L9IrCo41K489BRCSuICmJSWDltwG14n8q7pAU9KIiSn_xvsg8aGuRp9tSq301_aE3cWEcRw",
+      firebase_cli_token: ENV["FIREBASE_CLI_TOKEN"],
       android_artifact_path: apk_path,
       testers: "abdulrahmanramadan22@gmail.com",
       release_notes: "First Fastlane Firebase Distribution YouTube Video!"
