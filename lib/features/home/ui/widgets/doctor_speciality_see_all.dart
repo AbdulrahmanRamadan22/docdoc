@@ -9,7 +9,7 @@ class DoctorSpecialitySeeAll extends StatelessWidget {
     return Row(
       children: [
         Text(
-          "Doctor Speciality",
+          "Doctors Speciality",
           style: TextStyles.font18DarkBlueSemiBold,
         ),
         const Spacer(),
