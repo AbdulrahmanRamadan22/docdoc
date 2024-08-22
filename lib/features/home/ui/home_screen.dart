@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
             verticalSpace(24.h),
             DoctorSpecialitySeeAll(),
             verticalSpace(16.h),
-            DoctorSpecialityListView(),
+            // SpecialityListView(),
             verticalSpace(16.h),
             DoctorsListView(),
           ],

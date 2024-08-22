@@ -1,6 +1,7 @@
 // ignore: depend_on_referenced_packages
 import 'package:dio/dio.dart';
 import 'package:docdoc/core/networking/api_constants.dart';
+import 'package:docdoc/features/home/data/models/specializations_response_model.dart';
 import 'package:docdoc/features/login/data/models/login_request_body.dart';
 import 'package:docdoc/features/login/data/models/login_response.dart';
 import 'package:docdoc/features/sign_up/data/models/sign_up_request_body.dart';
@@ -23,4 +24,7 @@ abstract class ApiService {
   Future<SignUpResponse> signUp(
     @Body() SignUpRequestBody signUpRequestBody,
   );
+
+  @GET(ApiConstants.specialization)
+  Future<SpecializationResponseModel> getSpecializations();
 }
