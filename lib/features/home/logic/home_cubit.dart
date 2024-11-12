@@ -1,8 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:docdoc/core/networking/api_error_handler.dart';
+import 'package:docdoc/core/helpers/constants.dart';
 import 'package:docdoc/features/home/data/repo/home_repo.dart';
 import 'package:docdoc/features/home/logic/home_state.dart';
-import 'package:meta/meta.dart';
 
 class HomeCubit extends Cubit<HomeState> {
   final HomeRepo _homeRepo;
@@ -11,7 +10,14 @@ class HomeCubit extends Cubit<HomeState> {
 
   void getSpecializations() async {
     emit(const HomeState.specializationsLoading());
-    final response = await _homeRepo.getSpecializations();
+
+    // final token = await SharedPrefHelper.getSecuredString(
+    //     key: "${SharedPrefKeys.userToken}");
+
+    final response = await _homeRepo.getSpecializations(
+      token: "Bearer $token",
+    );
+
     response.when(success: (specializationResponseModel) {
       emit(HomeState.specializationsSuccess(specializationResponseModel));
     }, failure: (errorHandler) {

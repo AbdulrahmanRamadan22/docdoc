@@ -26,5 +26,7 @@ abstract class ApiService {
   );
 
   @GET(ApiConstants.specialization)
-  Future<SpecializationResponseModel> getSpecializations();
+  Future<SpecializationResponseModel> getSpecializations(
+    @Header('Authorization') String token,
+  );
 }

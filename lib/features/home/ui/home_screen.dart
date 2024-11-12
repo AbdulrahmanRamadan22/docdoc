@@ -4,6 +4,7 @@ import 'package:docdoc/features/home/ui/widgets/doctors_list_view.dart';
 import 'package:docdoc/features/home/ui/widgets/home_container_blue.dart';
 import 'package:docdoc/features/home/ui/widgets/home_top_bar.dart';
 import 'package:docdoc/features/home/ui/widgets/doctor_speciality_list_view.dart';
+import 'package:docdoc/features/home/ui/widgets/specializations_list/specializations_bloc_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -25,9 +26,15 @@ class HomeScreen extends StatelessWidget {
             verticalSpace(24.h),
             DoctorSpecialitySeeAll(),
             verticalSpace(16.h),
-            // SpecialityListView(),
-            verticalSpace(16.h),
-            DoctorsListView(),
+            Expanded(
+              child: Column(
+                children: [
+                  SpecializationsBlocBuilder(),
+                  verticalSpace(16.h),
+                  DoctorsListView(),
+                ],
+              ),
+            ),
           ],
         ),
       )),

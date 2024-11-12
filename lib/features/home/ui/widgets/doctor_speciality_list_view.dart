@@ -3,6 +3,7 @@ import 'package:docdoc/features/home/ui/widgets/specializations_list/specializat
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:skeletonizer/skeletonizer.dart';
 
 class SpecialityListView extends StatelessWidget {
   final List<SpecializationsData?> specializationDataList;
@@ -13,7 +14,7 @@ class SpecialityListView extends StatelessWidget {
     return SizedBox(
       height: 95.h,
       child: ListView.builder(
-        itemCount: 8,
+        itemCount: specializationDataList.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => SpecializationsListViewItem(
           itemIndex: index,
